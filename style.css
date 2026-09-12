@@ -123,7 +123,7 @@ a {
 }
 
 .hero-botanical {
-    animation: float-gently 8s ease-in-out infinite;
+    animation: botanical-sweep 10s ease-in-out infinite;
     filter: drop-shadow(12px 15px 0 rgba(0, 166, 166, 0.2));
     max-width: 310px;
     opacity: 0.92;
@@ -131,6 +131,63 @@ a {
     right: 18px;
     top: 126px;
     width: 34vw;
+}
+
+.bio-hero {
+    background: linear-gradient(115deg, #f6d8c8 0%, #d6eee6 48%, #f3e1a9 100%);
+    min-height: 500px;
+    overflow: hidden;
+}
+
+.bio-hero-content {
+    animation: rise-in 700ms both;
+}
+
+.bio-hero h1 {
+    margin-bottom: 24px;
+}
+
+.bio-grid {
+    border-top: 1px solid var(--line);
+    display: grid;
+    gap: 80px;
+    grid-template-columns: 1fr 2fr;
+}
+
+.bio-grid h2,
+.bio-grid div {
+    max-width: 680px;
+}
+
+.bio-grid div p {
+    color: var(--muted);
+    font-size: 1.1rem;
+}
+
+.bio-journey {
+    background: linear-gradient(135deg, #cde9e0, #f5d6dd 55%, #f7e5ac);
+}
+
+.bio-journey h2 {
+    margin-bottom: 0;
+}
+
+.place-list {
+    border-top: 1px solid rgba(62, 17, 28, 0.3);
+    display: grid;
+    gap: 18px;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 28px;
+    padding-top: 18px;
+}
+
+.place-list span {
+    color: var(--deep-maroon);
+    font-size: 0.95rem;
+}
+
+.bio-closing {
+    border-top: 0;
 }
 
 .kicker,
@@ -587,6 +644,21 @@ h2 {
     }
 }
 
+@keyframes botanical-sweep {
+    0%, 100% {
+        transform: translate3d(0, 0, 0) rotate(-4deg) scale(0.94);
+    }
+    25% {
+        transform: translate3d(-18px, -16px, 0) rotate(5deg) scale(1.02);
+    }
+    50% {
+        transform: translate3d(12px, -30px, 0) rotate(-2deg) scale(1.08);
+    }
+    75% {
+        transform: translate3d(28px, -8px, 0) rotate(7deg) scale(0.98);
+    }
+}
+
 @media (prefers-reduced-motion: reduce) {
     *,
     *::before,
@@ -650,6 +722,12 @@ h2 {
 
     .footer {
         justify-content: center;
+    }
+
+    .bio-grid,
+    .place-list {
+        gap: 42px;
+        grid-template-columns: 1fr;
     }
 
     .affiliation-grid {
