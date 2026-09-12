@@ -556,6 +556,74 @@ h2 {
     margin-left: 5px;
 }
 
+.experience-section {
+    background: linear-gradient(115deg, #f5d6dd, #f3e1a9 52%, #d6eee6);
+    border-bottom: 4px solid var(--hot-pink);
+}
+
+.experience-grid {
+    display: grid;
+    gap: 70px;
+    grid-template-columns: 1.5fr 1fr;
+    margin-top: 44px;
+}
+
+.experience-list {
+    border-top: 2px solid var(--deep-maroon);
+}
+
+.experience-list article {
+    border-bottom: 1px solid rgba(62, 17, 28, 0.28);
+    padding: 22px 0;
+}
+
+.experience-date {
+    color: var(--coral);
+    font-size: 0.78rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.experience-list h3 {
+    color: var(--deep-maroon);
+    font-size: 1.25rem;
+    font-weight: normal;
+    margin: 8px 0;
+}
+
+.experience-list p {
+    color: var(--muted);
+    margin: 0;
+}
+
+.skills-panel {
+    align-self: start;
+    background: var(--deep-maroon);
+    color: var(--beige);
+    padding: 30px;
+    transform: rotate(1.5deg);
+}
+
+.skills-panel h3 {
+    color: var(--sun);
+    font-size: 1.5rem;
+    font-weight: normal;
+    margin-bottom: 24px;
+}
+
+.skill-cloud {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 9px;
+}
+
+.skill-cloud span {
+    border: 1px solid var(--coral);
+    color: var(--paper);
+    font-size: 0.82rem;
+    padding: 7px 9px;
+}
+
 .reading-heading {
     align-items: end;
     display: flex;
@@ -761,6 +829,11 @@ h2 {
 
     .bio-grid,
     .place-list {
+        gap: 42px;
+        grid-template-columns: 1fr;
+    }
+
+    .experience-grid {
         gap: 42px;
         grid-template-columns: 1fr;
     }
