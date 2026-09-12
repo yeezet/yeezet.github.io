@@ -630,6 +630,76 @@ h2 {
     justify-content: space-between;
 }
 
+.book-opening {
+    display: flex;
+    height: 42px;
+    margin-bottom: 16px;
+    perspective: 500px;
+    width: 92px;
+}
+
+.book-cover {
+    background: var(--maroon);
+    border: 2px solid var(--deep-maroon);
+    display: block;
+    height: 42px;
+    position: relative;
+    transform-origin: center right;
+    width: 44px;
+}
+
+.book-cover::after {
+    background: var(--sun);
+    content: "";
+    height: 3px;
+    left: 8px;
+    position: absolute;
+    right: 8px;
+    top: 11px;
+}
+
+.book-cover-left {
+    border-radius: 5px 0 0 3px;
+    transform: rotateY(72deg);
+    transform-origin: right center;
+}
+
+.book-cover-right {
+    background: var(--electric);
+    border-color: var(--leaf);
+    border-radius: 0 5px 3px 0;
+    transform: rotateY(-72deg);
+    transform-origin: left center;
+}
+
+.book-spine {
+    background: var(--gold);
+    display: block;
+    height: 46px;
+    margin-top: -2px;
+    width: 5px;
+}
+
+#reading.is-visible .book-cover-left {
+    animation: book-open-left 900ms cubic-bezier(0.2, 0.8, 0.25, 1) both;
+}
+
+#reading.is-visible .book-cover-right {
+    animation: book-open-right 900ms cubic-bezier(0.2, 0.8, 0.25, 1) 100ms both;
+}
+
+#reading.is-visible .reading-item {
+    animation: page-unfold 700ms cubic-bezier(0.2, 0.8, 0.25, 1) both;
+}
+
+#reading.is-visible .reading-item:nth-child(2) {
+    animation-delay: 140ms;
+}
+
+#reading.is-visible .reading-item:nth-child(3) {
+    animation-delay: 280ms;
+}
+
 .reading-heading p {
     color: var(--muted);
     margin-bottom: 26px;
@@ -759,6 +829,36 @@ h2 {
     }
     75% {
         transform: translate3d(28px, -8px, 0) rotate(7deg) scale(0.98);
+    }
+}
+
+@keyframes book-open-left {
+    from {
+        transform: rotateY(72deg);
+    }
+    to {
+        transform: rotateY(8deg);
+    }
+}
+
+@keyframes book-open-right {
+    from {
+        transform: rotateY(-72deg);
+    }
+    to {
+        transform: rotateY(-8deg);
+    }
+}
+
+@keyframes page-unfold {
+    from {
+        opacity: 0;
+        transform: rotateX(-18deg) translateY(22px);
+        transform-origin: top center;
+    }
+    to {
+        opacity: 1;
+        transform: rotateX(0) translateY(0);
     }
 }
 
