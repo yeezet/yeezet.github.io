@@ -631,36 +631,42 @@ h2 {
 }
 
 .book-opening {
+    cursor: pointer;
     display: flex;
-    height: 42px;
+    height: 58px;
     margin-bottom: 16px;
     perspective: 500px;
-    width: 92px;
+    position: relative;
+    transform: translateZ(0) rotate(-2deg);
+    transform-style: preserve-3d;
+    transition: transform 420ms cubic-bezier(0.2, 0.8, 0.25, 1), filter 420ms ease;
+    width: 126px;
 }
 
 .book-cover {
     background: var(--maroon);
     border: 2px solid var(--deep-maroon);
     display: block;
-    height: 42px;
+    height: 58px;
     position: relative;
-    transform-origin: center right;
-    width: 44px;
+    transform-style: preserve-3d;
+    width: 58px;
+    z-index: 3;
 }
 
 .book-cover::after {
     background: var(--sun);
     content: "";
     height: 3px;
-    left: 8px;
+    left: 11px;
     position: absolute;
-    right: 8px;
-    top: 11px;
+    right: 11px;
+    top: 16px;
 }
 
 .book-cover-left {
     border-radius: 5px 0 0 3px;
-    transform: rotateY(72deg);
+    transform: rotateY(0deg);
     transform-origin: right center;
 }
 
@@ -668,24 +674,84 @@ h2 {
     background: var(--electric);
     border-color: var(--leaf);
     border-radius: 0 5px 3px 0;
-    transform: rotateY(-72deg);
+    transform: rotateY(0deg);
+    transform-origin: left center;
+}
+
+.book-page {
+    background: #fffaf0;
+    border: 2px solid #d6c4a7;
+    display: block;
+    height: 54px;
+    position: absolute;
+    top: 2px;
+    transform-style: preserve-3d;
+    width: 58px;
+    z-index: 2;
+}
+
+.book-page::after {
+    background: repeating-linear-gradient(to bottom, transparent 0 7px, rgba(100, 28, 43, 0.22) 8px 9px);
+    content: "";
+    height: 28px;
+    left: 10px;
+    position: absolute;
+    right: 10px;
+    top: 12px;
+}
+
+.book-page-left {
+    left: 3px;
+    transform: rotateY(0deg);
+    transform-origin: right center;
+}
+
+.book-page-right {
+    right: 3px;
+    transform: rotateY(0deg);
     transform-origin: left center;
 }
 
 .book-spine {
     background: var(--gold);
     display: block;
-    height: 46px;
-    margin-top: -2px;
-    width: 5px;
+    height: 62px;
+    left: 60px;
+    position: absolute;
+    top: -2px;
+    width: 6px;
+    z-index: 4;
 }
 
 #reading.is-visible .book-cover-left {
-    animation: book-open-left 900ms cubic-bezier(0.2, 0.8, 0.25, 1) both;
+    animation: book-open-left 1100ms cubic-bezier(0.2, 0.8, 0.25, 1) both;
 }
 
 #reading.is-visible .book-cover-right {
-    animation: book-open-right 900ms cubic-bezier(0.2, 0.8, 0.25, 1) 100ms both;
+    animation: book-open-right 1100ms cubic-bezier(0.2, 0.8, 0.25, 1) 100ms both;
+}
+
+#reading.is-visible .book-page-left {
+    animation: book-open-page-left 1000ms cubic-bezier(0.2, 0.8, 0.25, 1) 80ms both;
+}
+
+#reading.is-visible .book-page-right {
+    animation: book-open-page-right 1000ms cubic-bezier(0.2, 0.8, 0.25, 1) 180ms both;
+}
+
+.book-opening:hover {
+    filter: drop-shadow(8px 10px 0 rgba(0, 166, 166, 0.3));
+    transform: translateY(-8px) rotate(-4deg) scale(1.12);
+}
+
+.book-opening:hover .book-page-left {
+    animation: none;
+    transform: rotateY(68deg);
+}
+
+.book-opening:hover .book-page-right {
+    animation: none;
+    transform: rotateY(-68deg);
 }
 
 #reading.is-visible .reading-item {
@@ -834,19 +900,37 @@ h2 {
 
 @keyframes book-open-left {
     from {
-        transform: rotateY(72deg);
+        transform: rotateY(0deg);
     }
     to {
-        transform: rotateY(8deg);
+        transform: rotateY(68deg);
     }
 }
 
 @keyframes book-open-right {
     from {
-        transform: rotateY(-72deg);
+        transform: rotateY(0deg);
     }
     to {
-        transform: rotateY(-8deg);
+        transform: rotateY(-68deg);
+    }
+}
+
+@keyframes book-open-page-left {
+    from {
+        transform: rotateY(0deg);
+    }
+    to {
+        transform: rotateY(54deg);
+    }
+}
+
+@keyframes book-open-page-right {
+    from {
+        transform: rotateY(0deg);
+    }
+    to {
+        transform: rotateY(-54deg);
     }
 }
 
