@@ -253,6 +253,7 @@ h2 {
 }
 
 .affiliation {
+    animation: rise-in 700ms both;
     background: #f7f0e8;
     border: 1px solid var(--line);
     display: flex;
@@ -268,17 +269,44 @@ h2 {
     transform: translateY(-3px);
 }
 
-.affiliation img {
-    display: block;
-    max-height: 72px;
-    max-width: 100%;
-    object-fit: contain;
-    object-position: left center;
+.affiliation:nth-child(2) {
+    animation-delay: 140ms;
 }
 
-.affiliation:first-child img {
-    max-height: 82px;
-    width: min(100%, 480px);
+.affiliation-mark {
+    align-items: center;
+    display: flex;
+    height: 104px;
+    justify-content: center;
+    margin: -30px -30px 24px;
+    overflow: hidden;
+    transition: filter 220ms ease, transform 220ms ease;
+}
+
+.affiliation:hover .affiliation-mark {
+    filter: saturate(1.15);
+    transform: scale(1.025);
+}
+
+.saluki-mark {
+    background: var(--maroon);
+}
+
+.spartan-mark {
+    background: var(--leaf);
+}
+
+.affiliation-mark img {
+    display: block;
+    max-height: 76px;
+    max-width: 72%;
+    object-fit: contain;
+}
+
+.affiliation strong {
+    color: var(--deep-maroon);
+    font-size: 1.22rem;
+    font-weight: normal;
 }
 
 .affiliation span {
