@@ -22,8 +22,6 @@ html {
 
 body {
     background: var(--paper);
-    background-image: linear-gradient(135deg, rgba(232, 74, 130, 0.08) 25%, transparent 25%, transparent 50%, rgba(0, 166, 166, 0.07) 50%, rgba(0, 166, 166, 0.07) 75%, transparent 75%);
-    background-size: 38px 38px;
     color: var(--ink);
     font-family: Georgia, "Times New Roman", serif;
     line-height: 1.65;
@@ -386,6 +384,50 @@ h2 {
     animation-delay: 120ms;
     border-color: var(--leaf);
     box-shadow: 9px 9px 0 rgba(0, 166, 166, 0.18);
+}
+
+.project-affiliation {
+    align-items: center;
+    display: flex;
+    gap: 14px;
+    margin: 22px 0 30px;
+}
+
+.project-mark {
+    align-items: center;
+    border-radius: 50%;
+    display: flex;
+    flex: 0 0 58px;
+    height: 58px;
+    justify-content: center;
+    overflow: hidden;
+    transition: transform 220ms ease;
+}
+
+.project:hover .project-mark {
+    transform: rotate(-8deg) scale(1.08);
+}
+
+.project-mark img {
+    max-height: 42px;
+    max-width: 76%;
+}
+
+.project-affiliation strong,
+.project-affiliation small {
+    display: block;
+}
+
+.project-affiliation strong {
+    color: var(--deep-maroon);
+    font-size: 0.98rem;
+    font-weight: normal;
+}
+
+.project-affiliation small {
+    color: var(--muted);
+    font-size: 0.78rem;
+    margin-top: 3px;
 }
 
 .project-number {
