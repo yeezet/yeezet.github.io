@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 360" role="img" aria-labelledby="title desc">
-  <title id="title">Eli Collinsworth's move from Morehead to Owingsville to South Dakota to Illinois</title>
-  <desc id="desc">A maroon route line connects Morehead, Owingsville, South Dakota, and Illinois on a warm beige field.</desc>
+  <title id="title">Eli Collinsworth's move from Owingsville to Vermillion to Paducah to Carbondale</title>
+  <desc id="desc">A maroon route line connects Owingsville, Vermillion, Paducah, and Carbondale on a warm beige field.</desc>
   <rect width="1000" height="360" fill="#f3ecdf"/>
   <path d="M105 260 C175 180 215 105 335 100 S455 205 570 245 S720 160 870 105" fill="none" stroke="#641c2b" stroke-width="8" stroke-linecap="round" stroke-dasharray="2 18"/>
   <path d="M105 260 C175 180 215 105 335 100 S455 205 570 245 S720 160 870 105" fill="none" stroke="#b8876e" stroke-width="2" stroke-linecap="round"/>
@@ -12,9 +12,9 @@
   <circle cx="335" cy="100" r="7" fill="#f3ecdf"/>
   <circle cx="570" cy="245" r="7" fill="#f3ecdf"/>
   <circle cx="870" cy="105" r="7" fill="#f3ecdf"/>
-  <text x="105" y="310" text-anchor="middle" fill="#3e111c" font-family="Georgia, serif" font-size="24">Morehead, KY</text>
-  <text x="335" y="58" text-anchor="middle" fill="#3e111c" font-family="Georgia, serif" font-size="24">Owingsville, KY</text>
-  <text x="570" y="295" text-anchor="middle" fill="#3e111c" font-family="Georgia, serif" font-size="24">South Dakota</text>
-  <text x="870" y="163" text-anchor="middle" fill="#3e111c" font-family="Georgia, serif" font-size="24">Illinois</text>
+  <text x="105" y="310" text-anchor="middle" fill="#3e111c" font-family="Georgia, serif" font-size="24">Owingsville, KY</text>
+  <text x="335" y="58" text-anchor="middle" fill="#3e111c" font-family="Georgia, serif" font-size="24">Vermillion, SD</text>
+  <text x="570" y="295" text-anchor="middle" fill="#3e111c" font-family="Georgia, serif" font-size="24">Paducah, KY</text>
+  <text x="870" y="163" text-anchor="middle" fill="#3e111c" font-family="Georgia, serif" font-size="24">Carbondale, IL</text>
   <text x="500" y="330" text-anchor="middle" fill="#756d64" font-family="Arial, sans-serif" font-size="13" letter-spacing="3">A LIFE IN MOTION</text>
 </svg>
