@@ -211,6 +211,22 @@ h2 {
     margin-top: 26px;
 }
 
+.project-link {
+    color: var(--maroon);
+    display: inline-block;
+    font-family: Arial, sans-serif;
+    font-size: 0.82rem;
+    margin-top: 18px;
+}
+
+.project-link:hover {
+    color: var(--deep-maroon);
+}
+
+.project-link span {
+    margin-left: 5px;
+}
+
 .reading-heading {
     align-items: end;
     display: flex;
