@@ -201,31 +201,6 @@ h2 {
     width: 100%;
 }
 
-.journey-notes {
-    border-top: 1px solid var(--line);
-    display: grid;
-    gap: 18px;
-    grid-template-columns: repeat(3, 1fr);
-    margin-top: 28px;
-    padding-top: 20px;
-}
-
-.journey-notes p {
-    color: var(--muted);
-    font-family: Arial, sans-serif;
-    font-size: 0.78rem;
-    margin: 0;
-}
-
-.journey-notes strong {
-    color: var(--deep-maroon);
-    display: block;
-    font-family: Georgia, "Times New Roman", serif;
-    font-size: 1rem;
-    font-weight: normal;
-    margin-bottom: 4px;
-}
-
 .project-grid,
 .reading-list {
     display: grid;
@@ -283,38 +258,6 @@ h2 {
     align-items: end;
     display: flex;
     justify-content: space-between;
-}
-
-.campus-section h2 {
-    max-width: 500px;
-}
-
-.campus-marks {
-    display: block;
-    margin: 34px 0 50px;
-    width: 100%;
-}
-
-.fact-grid {
-    border-top: 1px solid var(--line);
-    display: grid;
-    gap: 24px;
-    grid-template-columns: repeat(3, 1fr);
-    padding-top: 22px;
-}
-
-.fact-number {
-    color: var(--maroon);
-    display: block;
-    font-size: 2.2rem;
-    line-height: 1;
-}
-
-.fact-grid p {
-    color: var(--muted);
-    font-family: Arial, sans-serif;
-    font-size: 0.78rem;
-    margin: 10px 0 0;
 }
 
 .reading-heading p {
@@ -410,9 +353,7 @@ h2 {
 
     .split-section,
     .project-grid,
-    .reading-list,
-    .journey-notes,
-    .fact-grid {
+    .reading-list {
         gap: 42px;
         grid-template-columns: 1fr;
     }
