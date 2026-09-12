@@ -452,6 +452,19 @@ h2 {
     box-shadow: 9px 9px 0 rgba(0, 166, 166, 0.18);
 }
 
+.project:nth-child(3) {
+    border-color: var(--gold);
+    box-shadow: 9px 9px 0 rgba(184, 135, 46, 0.2);
+}
+
+.prairie-mark {
+    background: var(--gold);
+    color: var(--deep-maroon);
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
 .project-affiliation {
     align-items: center;
     display: flex;
