@@ -1,10 +1,110 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My Website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The personal website of Yeeze, an undergraduate student and researcher.">
+    <title>Yeeze | Student, Reader, Researcher</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Hello!</h1>
-    <p>This is my GitHub Pages website.</p>
+    <header class="site-header">
+        <nav class="nav container" aria-label="Main navigation">
+            <a class="wordmark" href="#top">Yeeze</a>
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#research">Research</a>
+                <a href="#reading">Reading</a>
+                <a href="#resume">Resume</a>
+            </div>
+        </nav>
+    </header>
+
+    <main id="top">
+        <section class="hero container">
+            <p class="kicker">Undergraduate student · Reader · Researcher</p>
+            <h1>Curious about how ideas become <em>understanding.</em></h1>
+            <p class="hero-copy">A small home for my academic work, current questions, and the books and articles that have stayed with me.</p>
+            <a class="text-link" href="#about">Explore the site <span aria-hidden="true">↓</span></a>
+        </section>
+
+        <section id="about" class="section container split-section">
+            <p class="section-label">01 / About</p>
+            <div>
+                <h2>Hello, I’m Yeeze.</h2>
+                <p>I’m an undergraduate student interested in learning broadly and connecting ideas across disciplines. This website is a living record of what I’m studying, making, and thinking about.</p>
+                <p>I’m still figuring out where my questions will lead, which is part of the fun.</p>
+            </div>
+        </section>
+
+        <section id="research" class="section section-tinted">
+            <div class="container">
+                <p class="section-label">02 / Current work</p>
+                <h2>Research & questions</h2>
+                <div class="project-grid">
+                    <article class="project">
+                        <span class="project-number">01</span>
+                        <h3>Current research project</h3>
+                        <p>Add a short description of your current research, class project, or question here.</p>
+                        <span class="project-meta">In progress · 2026</span>
+                    </article>
+                    <article class="project">
+                        <span class="project-number">02</span>
+                        <h3>Questions I’m following</h3>
+                        <p>What ideas keep resurfacing? Use this space for themes and subjects you want to explore next.</p>
+                        <span class="project-meta">Notes · Ongoing</span>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="reading" class="section container">
+            <p class="section-label">03 / Reading desk</p>
+            <div class="reading-heading">
+                <h2>Books & articles</h2>
+                <p>A few things I’ve read and liked recently.</p>
+            </div>
+            <div class="reading-list">
+                <article class="reading-item">
+                    <p class="reading-type">Article</p>
+                    <h3>Article title</h3>
+                    <p>Author Name · Journal Name</p>
+                    <a href="#">Read my notes <span aria-hidden="true">↗</span></a>
+                </article>
+                <article class="reading-item">
+                    <p class="reading-type">Book</p>
+                    <h3>Book title</h3>
+                    <p>Author Name · Year</p>
+                    <a href="#">Read my thoughts <span aria-hidden="true">↗</span></a>
+                </article>
+                <article class="reading-item">
+                    <p class="reading-type">Article</p>
+                    <h3>Another title</h3>
+                    <p>Author Name · Publication</p>
+                    <a href="#">Read my notes <span aria-hidden="true">↗</span></a>
+                </article>
+            </div>
+        </section>
+
+        <section id="resume" class="section resume-section">
+            <div class="container resume-content">
+                <div>
+                    <p class="section-label">04 / Experience</p>
+                    <h2>Resume</h2>
+                    <p>Add your education, experience, awards, activities, and skills here.</p>
+                </div>
+                <a class="button" href="resume.pdf">View resume <span aria-hidden="true">↗</span></a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer container">
+        <p>© 2026 Yeeze</p>
+        <div class="footer-links">
+            <a href="mailto:you@example.com">Email</a>
+            <a href="https://github.com/yeezet">GitHub</a>
+            <a href="https://www.linkedin.com/">LinkedIn</a>
+        </div>
+    </footer>
 </body>
 </html>
