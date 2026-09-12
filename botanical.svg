@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 520" role="img" aria-labelledby="title desc">
+  <title id="title">Abstract botanical illustration</title>
+  <desc id="desc">A stylized flowering plant in maroon, green, gold, and coral.</desc>
+  <circle cx="260" cy="260" r="218" fill="#e7d5c1"/>
+  <circle cx="260" cy="260" r="184" fill="none" stroke="#b8876e" stroke-width="2" stroke-dasharray="4 12"/>
+  <path d="M260 440 C255 355 264 260 280 165 C287 125 298 91 310 61" fill="none" stroke="#184d3b" stroke-width="10" stroke-linecap="round"/>
+  <path d="M266 345 C220 300 173 282 114 286" fill="none" stroke="#184d3b" stroke-width="8" stroke-linecap="round"/>
+  <path d="M272 280 C319 241 363 229 425 239" fill="none" stroke="#184d3b" stroke-width="8" stroke-linecap="round"/>
+  <path d="M250 390 C208 358 177 350 137 357" fill="none" stroke="#184d3b" stroke-width="7" stroke-linecap="round"/>
+  <path d="M282 196 C330 166 368 163 401 176" fill="none" stroke="#184d3b" stroke-width="7" stroke-linecap="round"/>
+  <path d="M132 285 C165 249 207 264 241 316 C197 323 159 312 132 285Z" fill="#641c2b"/>
+  <path d="M422 239 C385 205 346 224 291 275 C338 288 387 275 422 239Z" fill="#d36f5f"/>
+  <path d="M137 357 C166 326 202 342 246 386 C202 397 163 386 137 357Z" fill="#b8872e"/>
+  <path d="M400 176 C369 146 333 161 284 202 C326 214 371 204 400 176Z" fill="#8a9a56"/>
+  <path d="M310 61 C275 54 253 76 258 116 C290 112 312 91 310 61Z" fill="#641c2b"/>
+  <path d="M310 61 C344 52 367 72 364 109 C334 110 311 91 310 61Z" fill="#d36f5f"/>
+  <circle cx="310" cy="65" r="15" fill="#f3ecdf" stroke="#b8872e" stroke-width="6"/>
+</svg>

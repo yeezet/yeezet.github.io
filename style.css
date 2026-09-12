@@ -6,6 +6,10 @@
     --ink: #292421;
     --muted: #756d64;
     --line: #d9cec0;
+    --leaf: #184d3b;
+    --sage: #8a9a56;
+    --coral: #d36f5f;
+    --gold: #b8872e;
 }
 
 * {
@@ -80,8 +84,38 @@ a {
 
 .hero {
     min-height: 610px;
+    overflow: hidden;
+    position: relative;
     padding-bottom: 110px;
     padding-top: 150px;
+}
+
+.hero > *:not(.hero-botanical) {
+    animation: rise-in 700ms both;
+    position: relative;
+    z-index: 1;
+}
+
+.hero > *:nth-child(2) {
+    animation-delay: 90ms;
+}
+
+.hero > *:nth-child(3) {
+    animation-delay: 180ms;
+}
+
+.hero > *:nth-child(4) {
+    animation-delay: 270ms;
+}
+
+.hero-botanical {
+    animation: float-gently 8s ease-in-out infinite;
+    max-width: 310px;
+    opacity: 0.92;
+    position: absolute;
+    right: 18px;
+    top: 126px;
+    width: 34vw;
 }
 
 .kicker,
@@ -171,7 +205,7 @@ h2 {
 }
 
 .section-tinted {
-    background: var(--beige);
+    background: linear-gradient(120deg, var(--beige), #ead8cf);
 }
 
 .affiliations-section {
@@ -203,6 +237,7 @@ h2 {
 }
 
 .affiliation {
+    background: #f7f0e8;
     border: 1px solid var(--line);
     display: flex;
     flex-direction: column;
@@ -259,6 +294,7 @@ h2 {
 }
 
 .journey-map {
+    animation: float-gently 9s ease-in-out infinite;
     display: block;
     margin-top: 44px;
     width: 100%;
@@ -273,8 +309,14 @@ h2 {
 }
 
 .project {
-    border-top: 1px solid var(--maroon);
+    animation: rise-in 650ms both;
+    border-top: 3px solid var(--coral);
     padding-top: 20px;
+}
+
+.project:nth-child(2) {
+    animation-delay: 120ms;
+    border-color: var(--leaf);
 }
 
 .project-number {
@@ -333,8 +375,17 @@ h2 {
 }
 
 .reading-item {
+    animation: rise-in 650ms both;
     border-top: 1px solid var(--line);
     padding-top: 20px;
+}
+
+.reading-item:nth-child(2) {
+    animation-delay: 100ms;
+}
+
+.reading-item:nth-child(3) {
+    animation-delay: 200ms;
 }
 
 .reading-item h3 {
@@ -398,6 +449,36 @@ h2 {
     min-height: 100px;
 }
 
+@keyframes rise-in {
+    from {
+        opacity: 0;
+        transform: translateY(18px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes float-gently {
+    0%, 100% {
+        transform: translateY(0) rotate(0deg);
+    }
+    50% {
+        transform: translateY(-8px) rotate(1deg);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        scroll-behavior: auto !important;
+    }
+}
+
 @media (max-width: 700px) {
     .container {
         padding-left: 22px;
@@ -412,6 +493,15 @@ h2 {
         min-height: 550px;
         padding-bottom: 80px;
         padding-top: 110px;
+    }
+
+    .hero-botanical {
+        bottom: 14px;
+        max-width: 190px;
+        opacity: 0.7;
+        right: -30px;
+        top: auto;
+        width: 46vw;
     }
 
     .split-section,
