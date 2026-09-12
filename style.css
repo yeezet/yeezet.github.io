@@ -140,7 +140,7 @@ a {
 }
 
 .bio-hero-content {
-    animation: rise-in 700ms both;
+    position: relative;
 }
 
 .bio-hero h1 {
@@ -430,7 +430,6 @@ h2 {
 }
 
 .project {
-    animation: rise-in 650ms both;
     border-top: 3px solid var(--coral);
     background: rgba(255, 253, 249, 0.72);
     box-shadow: 9px 9px 0 rgba(232, 74, 130, 0.16);
@@ -547,7 +546,6 @@ h2 {
 }
 
 .reading-item {
-    animation: rise-in 650ms both;
     background: rgba(255, 253, 249, 0.7);
     border-top: 1px solid var(--line);
     box-shadow: 6px 6px 0 rgba(184, 135, 46, 0.24);
@@ -622,6 +620,17 @@ h2 {
     font-size: 0.78rem;
     justify-content: space-between;
     min-height: 100px;
+}
+
+.scroll-reveal {
+    opacity: 0;
+    transform: translateY(34px);
+    transition: opacity 760ms ease var(--reveal-delay, 0ms), transform 760ms cubic-bezier(0.2, 0.75, 0.25, 1) var(--reveal-delay, 0ms);
+}
+
+.scroll-reveal.is-visible {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 @keyframes rise-in {
