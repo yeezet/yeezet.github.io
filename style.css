@@ -458,11 +458,12 @@ h2 {
 }
 
 .prairie-mark {
-    background: var(--gold);
-    color: var(--deep-maroon);
-    font-family: Georgia, "Times New Roman", serif;
-    font-size: 0.9rem;
-    font-weight: bold;
+    background: #f3c969;
+}
+
+.prairie-mark img {
+    max-height: 30px;
+    max-width: 82%;
 }
 
 .project-affiliation {
