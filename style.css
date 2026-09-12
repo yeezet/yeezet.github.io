@@ -67,7 +67,7 @@ a {
 .footer,
 .footer-links,
 .button {
-    font-family: Arial, sans-serif;
+    font-family: Georgia, "Times New Roman", serif;
 }
 
 .nav-links {
@@ -123,12 +123,28 @@ a {
 .reading-type,
 .project-meta {
     color: var(--maroon);
-    font-family: Arial, sans-serif;
+    font-family: Georgia, "Times New Roman", serif;
     font-size: 0.72rem;
     font-weight: bold;
     letter-spacing: 0.12em;
     margin: 0;
     text-transform: uppercase;
+}
+
+.kicker {
+    color: var(--coral);
+}
+
+.section-label {
+    color: var(--gold);
+}
+
+.reading-type {
+    color: var(--leaf);
+}
+
+.project-meta {
+    color: var(--sage);
 }
 
 h1,
@@ -163,7 +179,7 @@ h1 em {
     border-bottom: 1px solid var(--maroon);
     color: var(--maroon);
     display: inline-block;
-    font-family: Arial, sans-serif;
+    font-family: Georgia, "Times New Roman", serif;
     font-size: 0.85rem;
     margin-top: 24px;
     padding-bottom: 4px;
@@ -267,7 +283,7 @@ h2 {
 
 .affiliation span {
     color: var(--muted);
-    font-family: Arial, sans-serif;
+    font-family: Georgia, "Times New Roman", serif;
     font-size: 0.78rem;
     margin-top: 28px;
 }
@@ -321,7 +337,7 @@ h2 {
 
 .project-number {
     color: var(--maroon);
-    font-family: Arial, sans-serif;
+    font-family: Georgia, "Times New Roman", serif;
     font-size: 0.75rem;
 }
 
@@ -346,7 +362,7 @@ h2 {
 .project-link {
     color: var(--maroon);
     display: inline-block;
-    font-family: Arial, sans-serif;
+    font-family: Georgia, "Times New Roman", serif;
     font-size: 0.82rem;
     margin-top: 18px;
 }
@@ -394,7 +410,7 @@ h2 {
 
 .reading-item a {
     color: var(--maroon);
-    font-family: Arial, sans-serif;
+    font-family: Georgia, "Times New Roman", serif;
     font-size: 0.82rem;
 }
 
