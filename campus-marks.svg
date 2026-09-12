@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 260" role="img" aria-labelledby="title desc">
+  <title id="title">Southern Illinois University and Michigan State University marks</title>
+  <desc id="desc">Two original maroon and green campus-inspired wordmarks for Eli's academic story.</desc>
+  <rect width="900" height="260" fill="#fbf9f5"/>
+  <g transform="translate(55 45)">
+    <circle cx="85" cy="85" r="72" fill="#641c2b"/>
+    <path d="M45 92c25-35 55-35 80 0M44 110c25-35 57-35 82 0" fill="none" stroke="#f3ecdf" stroke-width="7"/>
+    <text x="85" y="78" text-anchor="middle" fill="#f3ecdf" font-family="Arial, sans-serif" font-size="25" font-weight="bold">SIU</text>
+    <text x="190" y="78" fill="#3e111c" font-family="Georgia, serif" font-size="32">Southern Illinois</text>
+    <text x="190" y="116" fill="#756d64" font-family="Arial, sans-serif" font-size="15" letter-spacing="2">CARBONDALE</text>
+  </g>
+  <g transform="translate(500 45)">
+    <circle cx="85" cy="85" r="72" fill="#184d3b"/>
+    <path d="M45 100L65 58l20 26 20-26 20 42" fill="none" stroke="#f3ecdf" stroke-width="8" stroke-linejoin="round"/>
+    <text x="85" y="125" text-anchor="middle" fill="#f3ecdf" font-family="Arial, sans-serif" font-size="20" font-weight="bold">MSU</text>
+    <text x="190" y="78" fill="#184d3b" font-family="Georgia, serif" font-size="32">Michigan State</text>
+    <text x="190" y="116" fill="#756d64" font-family="Arial, sans-serif" font-size="15" letter-spacing="2">EAST LANSING</text>
+  </g>
+</svg>

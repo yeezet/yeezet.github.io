@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 360" role="img" aria-labelledby="title desc">
+  <title id="title">Eli Collinsworth's move from Kentucky to South Dakota to Illinois</title>
+  <desc id="desc">A maroon route line connects Kentucky, South Dakota, and Illinois on a warm beige field.</desc>
+  <rect width="1000" height="360" fill="#f3ecdf"/>
+  <path d="M145 260 C245 170 275 105 425 100 S610 190 795 105" fill="none" stroke="#641c2b" stroke-width="8" stroke-linecap="round" stroke-dasharray="2 18"/>
+  <path d="M145 260 C245 170 275 105 425 100 S610 190 795 105" fill="none" stroke="#b8876e" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="145" cy="260" r="18" fill="#3e111c"/>
+  <circle cx="425" cy="100" r="18" fill="#3e111c"/>
+  <circle cx="795" cy="105" r="18" fill="#3e111c"/>
+  <circle cx="145" cy="260" r="7" fill="#f3ecdf"/>
+  <circle cx="425" cy="100" r="7" fill="#f3ecdf"/>
+  <circle cx="795" cy="105" r="7" fill="#f3ecdf"/>
+  <text x="145" y="310" text-anchor="middle" fill="#3e111c" font-family="Georgia, serif" font-size="28">Kentucky</text>
+  <text x="425" y="58" text-anchor="middle" fill="#3e111c" font-family="Georgia, serif" font-size="28">South Dakota</text>
+  <text x="795" y="163" text-anchor="middle" fill="#3e111c" font-family="Georgia, serif" font-size="28">Illinois</text>
+  <text x="500" y="330" text-anchor="middle" fill="#756d64" font-family="Arial, sans-serif" font-size="13" letter-spacing="3">A LIFE IN MOTION</text>
+</svg>
