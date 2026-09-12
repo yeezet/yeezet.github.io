@@ -177,60 +177,55 @@ a {
     display: grid;
     gap: 18px;
     grid-template-columns: repeat(4, 1fr);
-    margin-top: 28px;
-    padding-top: 18px;
-}
+    height: 108px;
 
-.place-list span {
-    color: var(--deep-maroon);
-    font-size: 0.95rem;
-}
+    position: relative;
+    transform: rotate(-2deg);
+    transition: transform 300ms ease, filter 300ms ease;
+    width: 190px;
 
 .interest-list {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
-    margin: 28px 0;
-}
-
-.interest-list span {
-    background: var(--sun);
-    border: 2px solid var(--deep-maroon);
+    height: 96px;
+    position: absolute;
+    top: 6px;
+    width: 88px;
+    z-index: 1;
     color: var(--deep-maroon);
     padding: 8px 12px;
 }
 
 .interest-list span:nth-child(2) {
     background: #d6eee6;
-}
+    left: 14px;
 
-.interest-list span:nth-child(3) {
-    background: #f5d6dd;
+    right: 14px;
+    top: 22px;
 }
 
 .interest-list span:nth-child(4) {
     background: #cde9e0;
-}
-
+    left: 0;
 .bio-closing {
     border-top: 0;
 }
 
 .kicker,
 .section-label,
-.reading-type,
-.project-meta {
+    right: 0;
     color: var(--maroon);
     font-family: Georgia, "Times New Roman", serif;
     font-size: 0.72rem;
     font-weight: bold;
     letter-spacing: 0.12em;
-    margin: 0;
-    text-transform: uppercase;
-}
-
-.kicker {
-    color: var(--coral);
+    height: 88px;
+    position: absolute;
+    top: 10px;
+    transition: transform 300ms ease, box-shadow 300ms ease;
+    width: 86px;
+    z-index: 2;
 }
 .section-label {
     color: var(--gold);
@@ -238,39 +233,41 @@ a {
 
 .reading-type {
     color: var(--leaf);
-}
-
+    left: 14px;
+    right: 14px;
 .project-meta {
     color: var(--sage);
 }
-
+    left: 8px;
 h1,
 h2,
 h3,
-p {
+    right: 8px;
     margin-top: 0;
 }
 
 h1 {
-    color: var(--deep-maroon);
-    font-size: clamp(3.2rem, 8vw, 7.4rem);
-    font-weight: normal;
+    height: 104px;
+    left: 92px;
+    position: absolute;
+    top: 2px;
+    width: 6px;
     letter-spacing: -0.04em;
     line-height: 0.98;
     margin: 28px 0;
     max-width: 900px;
-    text-shadow: 5px 5px 0 rgba(232, 74, 130, 0.16);
-}
+    filter: drop-shadow(8px 10px 0 rgba(0, 166, 166, 0.3));
+    transform: translateY(-6px) rotate(-2deg) scale(1.04);
 
 h1 em {
     color: var(--maroon);
     font-style: italic;
-}
+    transform: translateY(-8px) rotate(-3deg);
 
 .hero-copy {
     color: var(--muted);
     font-size: 1.15rem;
-    max-width: 520px;
+    transform: translateY(-8px) rotate(3deg);
 }
 
 .text-link {
@@ -633,58 +630,54 @@ h2 {
 .book-opening {
     animation: book-settle 850ms cubic-bezier(0.2, 0.8, 0.25, 1) both;
     cursor: pointer;
-    display: flex;
-    height: 74px;
+    height: 108px;
     margin-bottom: 16px;
     position: relative;
     transform: rotate(-2deg);
-    transition: transform 350ms ease, filter 350ms ease;
-    width: 154px;
+    transition: transform 300ms ease, filter 300ms ease;
+    width: 190px;
 }
 
 .book-cover {
     background: var(--maroon);
     border: 2px solid var(--deep-maroon);
-    display: block;
-    height: 68px;
-    position: relative;
-    transition: transform 500ms cubic-bezier(0.2, 0.8, 0.25, 1);
-    width: 38px;
-    z-index: 3;
+    height: 96px;
+    position: absolute;
+    top: 6px;
+    width: 88px;
+    z-index: 1;
 }
 
 .book-cover::after {
     background: var(--sun);
     content: "";
     height: 3px;
-    left: 8px;
+    left: 14px;
     position: absolute;
-    right: 8px;
-    top: 18px;
+    right: 14px;
+    top: 22px;
 }
 
 .book-cover-left {
     border-radius: 6px 0 0 4px;
-    transform: skewY(7deg);
-    transform-origin: right center;
+    left: 0;
 }
 
 .book-cover-right {
     background: var(--electric);
     border-color: var(--leaf);
     border-radius: 0 6px 4px 0;
-    transform: skewY(-7deg);
-    transform-origin: left center;
+    right: 0;
 }
 
 .book-page {
     background: repeating-linear-gradient(to bottom, #fffaf0 0 9px, #eadfc9 10px 11px);
     border: 2px solid #d6c4a7;
-    display: block;
-    height: 62px;
-    position: relative;
-    transition: transform 500ms cubic-bezier(0.2, 0.8, 0.25, 1), box-shadow 350ms ease;
-    width: 38px;
+    height: 88px;
+    position: absolute;
+    top: 10px;
+    transition: transform 300ms ease, box-shadow 300ms ease;
+    width: 86px;
     z-index: 2;
 }
 
@@ -693,39 +686,43 @@ h2 {
     border-radius: 50%;
     content: "";
     height: 7px;
-    left: 12px;
+    left: 14px;
     position: absolute;
-    right: 12px;
+    right: 14px;
     top: 13px;
 }
 
 .book-page-left {
-    transform: skewY(5deg);
+    left: 8px;
 }
 
 .book-page-right {
-    transform: skewY(-5deg);
+    right: 8px;
 }
 
 .book-spine {
     background: var(--gold);
-    display: block;
-    height: 74px;
-    width: 7px;
+    height: 104px;
+    left: 92px;
+    position: absolute;
+    top: 2px;
+    width: 6px;
     z-index: 4;
 }
 
 .book-opening:hover {
+    filter: drop-shadow(8px 10px 0 rgba(0, 166, 166, 0.3));
+    transform: translateY(-6px) rotate(-2deg) scale(1.04);
 }
 
 .book-opening:hover .book-page-left {
     box-shadow: -8px 8px 0 rgba(232, 74, 130, 0.22);
-    transform: skewY(5deg) translateY(-10px) rotate(-7deg);
+    transform: translateY(-8px) rotate(-3deg);
 }
 
 .book-opening:hover .book-page-right {
     box-shadow: 8px 8px 0 rgba(0, 166, 166, 0.22);
-    transform: skewY(-5deg) translateY(-10px) rotate(7deg);
+    transform: translateY(-8px) rotate(3deg);
 }
 
 #reading.is-visible .reading-item {
